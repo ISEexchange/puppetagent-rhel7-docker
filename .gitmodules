@@ -1,3 +1,6 @@
 [submodule "secrets"]
 	path = secrets
 	url = git@github.com:ISEexchange/secrets.git
+[submodule "oval"]
+	path = oval
+	url = https://github.com/jumanjihouse/oval.git

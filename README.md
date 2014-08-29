@@ -18,6 +18,17 @@ docker build --rm -t puppetagent:el7 .
 ```
 
 
+OVAL vulnerability scan
+-----------------------
+
+This image runs a vulnerability scan during `docker build`.
+You can also perform the scan inside a running container via:
+
+    /oval/oval-vulnerability-scan.sh
+
+See https://github.com/jumanjihouse/oval for details.
+
+
 FAQ
 ---
 
