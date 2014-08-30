@@ -1,4 +1,4 @@
-Puppet Agent on RHEL7 docker image
+Puppet Agent on RHEL7 docker image [![wercker status](https://app.wercker.com/status/037194a29fe7e99098f0ea16899b53ed/s/master "wercker status")](https://app.wercker.com/project/bykey/037194a29fe7e99098f0ea16899b53ed)
 ==================================
 
 Usage
