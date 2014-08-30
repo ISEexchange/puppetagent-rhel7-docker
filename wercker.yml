@@ -8,6 +8,7 @@ build:
         code: |
           docker version
           docker info
+          docker images
     - script:
         name: build image
         code: docker build --rm -t puppetagent:el7 .
