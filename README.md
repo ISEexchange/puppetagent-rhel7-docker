@@ -21,7 +21,7 @@ docker build --rm -t puppetagent:el7 .
 OVAL vulnerability scan
 -----------------------
 
-This image runs a vulnerability scan during `docker build`.
+The wercker test harness runs a vulnerability scan.
 You can also perform the scan inside a running container via:
 
     /oval/oval-vulnerability-scan.sh

@@ -11,3 +11,7 @@ build:
     - script:
         name: build image
         code: docker build --rm -t puppetagent:el7 .
+    - script:
+        name: run oval vulnerability scan and allow to fail
+        code: |
+          docker run --rm -t puppetagent:el7 /oval/oval-vulnerability-scan.sh || :

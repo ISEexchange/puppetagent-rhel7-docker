@@ -8,9 +8,6 @@ RUN yum -y install tar puppet \
     findutils scap-security-guide \
     ; yum clean all
 
-# Note: If image is not up-to-date,
-# the scan exits non-zero and fails docker-build!
 ADD oval /oval
 RUN yum -y update; yum clean all
 RUN /oval/remediate-oscap.sh
-RUN /oval/oval-vulnerability-scan.sh || :
