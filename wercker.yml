@@ -1,0 +1,10 @@
+box: wercker-labs/docker
+build:
+  steps:
+    - install-packages:
+        packages: lxc-docker=1.2.0
+    - script:
+        name: print system-wide docker info
+        code: |
+          docker version
+          docker info
